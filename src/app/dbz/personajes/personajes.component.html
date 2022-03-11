@@ -1,0 +1,8 @@
+<div class="col">
+    <h3>Personajes</h3>
+    <hr>
+    <ul>
+        <!--"| number " :  pipe: tuberia ,especial de angular -->
+        <li *ngFor="let personaje of personajes">{{ personaje.nombre }} - {{ personaje.poder| number }}</li>
+    </ul>
+</div>
