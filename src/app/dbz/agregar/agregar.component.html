@@ -1,0 +1,19 @@
+<h3 class="col">Agregar</h3>
+<hr>
+<!--$event: quiero el evento que esta disparando-->
+<!--ngSubmit: es un evento que nos ayuda a que no se refresque la pagina
+        y es un evento de Angular-->
+<!--[value] : nos ayuda a cachar la  propiedad en la logica-->
+<!--[] : establecer una propiedad a un objeto, el objeto puede ser un div, input-->
+<!--() : para emitir o escuchas eventos-->
+<!--[(ngModel)]: Emite, como recibe eventos-->
+<form (ngSubmit)="agregar()">
+    <!--[value]='nuevo.nombre' (input)="cambiarNombre( $event ) esto lo podemos hacer con un ngModel-->
+    <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre">
+
+    <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder">
+
+    <button>
+        Agregar
+    </button>
+</form>

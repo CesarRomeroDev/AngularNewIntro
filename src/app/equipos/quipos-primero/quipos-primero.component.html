@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th>Equipo</th>
+            <th>Ofensiva</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let equipo of equipos">
+            <td>{{ equipo.nombre }}</td>
+            <td>{{ equipo.tactica }}</td>
+        </tr>
+    </tbody>
+</table>

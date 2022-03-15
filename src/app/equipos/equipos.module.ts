@@ -3,12 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { PrimeraDivisionComponent } from './primera-division/primera-division.component';
 import { FormsModule } from '@angular/forms';
+import { AgregarEquipoComponent } from './agregar-equipo/agregar-equipo.component';
+import { QuiposPrimeroComponent } from './quipos-primero/quipos-primero.component';
+import { EquipoService } from './services/equipos.service';
 
 
 
 @NgModule({
   declarations: [
-    PrimeraDivisionComponent
+    PrimeraDivisionComponent,
+    AgregarEquipoComponent,
+    QuiposPrimeroComponent
   ],
   exports: [
     PrimeraDivisionComponent
@@ -16,6 +21,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule
+  ],
+  providers: [
+    EquipoService
   ]
 })
 export class EquiposModule { }

@@ -1,0 +1,15 @@
+<form class="col s12" (ngSubmit)="agregar()">
+    <div class="row">
+        <div class="input-field col s6">
+            <input type="text" class="validate" name="nombre" [(ngModel)]="nuevo.nombre">
+            <label for="nombre">Equipo</label>
+        </div>
+        <div class="input-field col s6">
+            <input type="text" class="validate" name="tactica" [(ngModel)]="nuevo.tactica">
+            <label for="tictica">Ofensiva</label>
+        </div>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+    </button>
+</form>
